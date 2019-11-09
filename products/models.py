@@ -6,6 +6,8 @@ class Product(models.Model):
     name = models.CharField(max_length = 100)
     slug = models.SlugField()
     details = models.TextField()
+    cost = models.IntegerField(default = 50, blank = True)
+    seller = models.CharField(max_length = 100, default = 'abc', blank = True)
 
     def __str__(self):
         return self.name
