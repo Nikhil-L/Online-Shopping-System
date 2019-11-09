@@ -1,21 +1,15 @@
+{% extends 'base_layout.html' %}
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Products</title>
-    </head>
-    <body>
-        <h1>Product List</h1>
-        <div class="products">
-            {% for product in products %}
-                <div class="article">
-                    <h3><a href="#">{{ product.name }}</a></h3>
-                    <p>{{ product.snippet }}</p>
-                    <p>{{ product.display_cost }}</p>
-                    <p>{{ product.seller }}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </body>
-</html>
+{% block content %}
+    <h1>Product List</h1>
+    <div class="products">
+        {% for product in products %}
+            <div class="article">
+                <h3><a href="#">{{ product.name }}</a></h3>
+                <p>{{ product.snippet }}</p>
+                <p>{{ product.display_cost }}</p>
+                <p>{{ product.seller }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
