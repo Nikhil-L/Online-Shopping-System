@@ -10,8 +10,10 @@
         <div class="products">
             {% for product in products %}
                 <div class="article">
-                    <h2><a href="#">{{ product.name }}</a></h2>
+                    <h3><a href="#">{{ product.name }}</a></h3>
                     <p>{{ product.details }}</p>
+                    <p>{{ product.cost }}</p>
+                    <p>{{ product.seller }}</p>
                 </div>
             {% endfor %}
         </div>
