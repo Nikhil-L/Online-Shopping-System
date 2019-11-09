@@ -8,7 +8,8 @@ class Product(models.Model):
     description = models.TextField(blank = True)
     cost = models.IntegerField(default = 50, blank = True)
     details = models.TextField()
-    seller = models.CharField(max_length = 100, default = 'abc', blank = True)
+    seller = models.CharField(max_length = 100, blank = True)
+    image = models.ImageField(blank = 'True')
 
     def __str__(self):
         return self.name
