@@ -5,8 +5,9 @@ from django.db import models
 class Product(models.Model):
     name = models.CharField(max_length = 100)
     slug = models.SlugField()
-    details = models.TextField()
+    description = models.TextField(blank = True)
     cost = models.IntegerField(default = 50, blank = True)
+    details = models.TextField()
     seller = models.CharField(max_length = 100, default = 'abc', blank = True)
 
     def __str__(self):
