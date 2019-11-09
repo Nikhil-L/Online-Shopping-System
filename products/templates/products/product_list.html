@@ -11,8 +11,8 @@
             {% for product in products %}
                 <div class="article">
                     <h3><a href="#">{{ product.name }}</a></h3>
-                    <p>{{ product.details }}</p>
-                    <p>{{ product.cost }}</p>
+                    <p>{{ product.snippet }}</p>
+                    <p>{{ product.display_cost }}</p>
                     <p>{{ product.seller }}</p>
                 </div>
             {% endfor %}

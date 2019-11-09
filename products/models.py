@@ -11,3 +11,9 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def display_cost(self):
+        return '₹' + str(self.cost)
+
+    def snippet(self):
+        return self.details[0:50] + "..."
