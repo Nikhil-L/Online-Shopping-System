@@ -8,7 +8,7 @@ def signup_view(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('products:product_list')
+            return redirect('customer:customer_details')
     else:
         form = UserCreationForm()
     return render(request, 'accounts/signup.html', {'form': form})
