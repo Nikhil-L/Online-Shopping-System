@@ -17,5 +17,5 @@ class Product(models.Model):
     def display_cost(self):
         return '₹' + str(self.cost)
 
-    def snippet(self):
-        return self.details[0:50] + "..."
+    def snippet_description(self):
+        return self.description[0:50] + "..."

@@ -6,9 +6,8 @@
         {% for product in products %}
             <div class="article">
                 <h2><a href="{% url 'products:details' product.slug %}">{{ product.name }}</a></h2>
-                <p>{{ product.snippet }}</p>
+                <p>{{ product.snippet_description }}</p>
                 <p>{{ product.display_cost }}</p>
-                <p>{{ product.seller }}</p>
             </div>
         {% endfor %}
     </div>
