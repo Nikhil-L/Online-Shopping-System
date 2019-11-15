@@ -23,4 +23,4 @@ class Product(models.Model):
         return self.description[0:50] + "..."
 
     def ratings(self):
-        return 'ratings : ' + self.rating
+        return 'ratings : ' + str(self.rating)
