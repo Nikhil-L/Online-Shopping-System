@@ -21,3 +21,6 @@ class Product(models.Model):
 
     def snippet_description(self):
         return self.description[0:50] + "..."
+
+    def ratings(self):
+        return 'ratings : ' + self.rating
