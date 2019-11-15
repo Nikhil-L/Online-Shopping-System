@@ -5,4 +5,4 @@ class CreateCustomerForm(forms.ModelForm):
     class Meta:
         model = models.Customer
         fields = ['FirstName', 'LastName', 'Email', 'Phone',
-                    'Address']
+                    'Address', 'City', 'Pincode']

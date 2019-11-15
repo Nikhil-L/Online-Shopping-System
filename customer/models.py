@@ -6,8 +6,8 @@ class Customer(models.Model):
     Email = models.EmailField(max_length = 100)
     Phone = models.BigIntegerField()
     Address = models.CharField(max_length = 250)
-    city = models.CharField(max_length = 50)
-    pincode = models.IntegerField()
+    City = models.CharField(max_length = 50)
+    Pincode = models.IntegerField()
 
     def __str__(self):
         return self.FirstName + " " + self.LastName
