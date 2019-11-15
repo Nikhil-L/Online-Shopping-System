@@ -8,7 +8,7 @@ class Product(models.Model):
     description = models.TextField(blank = True)
     cost = models.IntegerField(default = 50, blank = True)
     details = models.TextField()
-    rating = models.FloatField(blank = True)
+    rating = models.IntegerField(blank = True)
     seller = models.CharField(max_length = 100, blank = True)
     image = models.ImageField(blank = 'True')
     items_remaining = models.IntegerField(default = 50, blank = True)
