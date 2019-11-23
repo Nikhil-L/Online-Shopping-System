@@ -5,4 +5,5 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url = "/accounts/login/")
 def order_details(request):
-    return HttpResponse("orders")
+    if 'id' in request.POST:
+        return HttpResponse(request.POST.get('id'))
