@@ -10,7 +10,7 @@
         {% endif %}
         <input type="submit" name="login" value="login">
     </form>
-    <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
+    <form class="site-form" action="{% url 'accounts:signup' %}" method="get">
         <p>Don't have an accout?. You can signup here</p>
         {% csrf_token %}
         <input type="submit" name="signup" value="signup">
