@@ -1,6 +1,7 @@
 
 from django.contrib import admin
 from django.urls import path, include
+from products import views as product_views
 from . import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
@@ -12,7 +13,7 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('customer/', include('customer.urls')),
     path('orders/', include('orders.urls')),
-    path('', views.homepage, name = 'home')
+    path('', product_views.product_list, name = 'home')
 ]
 
 urlpatterns += staticfiles_urlpatterns()
