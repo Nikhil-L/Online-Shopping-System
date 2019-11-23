@@ -6,7 +6,7 @@ def customer_details(request):
         form = forms.CreateCustomerForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('products:product_list')
+            return redirect('home')
     else:
         form = forms.CreateCustomerForm()
     return render(request, 'customer/customer_details.html', {'form':form})
