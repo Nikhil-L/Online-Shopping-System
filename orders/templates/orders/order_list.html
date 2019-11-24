@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <h1>Order List</h1>
+    <div class="orders">
+        {% for order in orders %}
+            <div class="order">
+                <h2>{{ order.productname }}</h2>
+                <p>{{ order.cost }}</p>
+                <p>{{ order.customer_address }}</p>
+                <p>{{ order.city }}</p>
+                <p>{{ order.pincode }}</p>
+                <p>{{ order.phone }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

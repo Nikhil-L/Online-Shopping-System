@@ -23,4 +23,5 @@ def order_details(request):
         return redirect('home')
 
     else:
-        return HttpResponse("Your Orders")
+        orders = Orders.objects.filter(username = request.user)
+        return render(request, 'orders/order_list.html', {'orders': orders})
