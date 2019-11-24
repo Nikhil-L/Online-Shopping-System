@@ -17,6 +17,9 @@
                 <form class="orders" action="{% url 'orders:order_details' %}" method="get">
                     <input type="submit" name="orders" value="orders">
                 </form>
+                <form class="home" action="{% url 'products:product_list' %}" method="get">
+                    <input type="submit" name="home" value="Home">
+                </form>
             {% else %}
                 <form class="site-form" action="{% url 'accounts:login' %}" method="get">
                     <input type="submit" name="login" value="login">
