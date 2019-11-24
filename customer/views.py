@@ -5,7 +5,9 @@ def customer_details(request):
     if request.method == 'POST':
         form = forms.CreateCustomerForm(request.POST)
         if form.is_valid():
-            form.save()
+            instance = form.save(commit = False)
+            instance.UserName = request.user
+            instance.save()
             return redirect('home')
     else:
         form = forms.CreateCustomerForm()

@@ -8,3 +8,7 @@ class Orders(models.Model):
     city = models.CharField(max_length = 50)
     pincode = models.IntegerField()
     phone = models.BigIntegerField()
+
+
+    def __str__(self):
+        return self.productname
