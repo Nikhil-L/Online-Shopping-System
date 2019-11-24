@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from . import forms
 
+
 def customer_details(request):
     if request.method == 'POST':
         form = forms.CreateCustomerForm(request.POST)
