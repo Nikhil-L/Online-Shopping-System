@@ -4,7 +4,7 @@
     <h1>Product List</h1>
     <div class="products">
         {% for product in products %}
-            <div class="article">
+            <div class="product">
                 <h2><a href="{% url 'products:details' product.slug %}">{{ product.name }}</a></h2>
                 <p>{{ product.snippet_description }}</p>
                 <p>{{ product.display_cost }}</p>

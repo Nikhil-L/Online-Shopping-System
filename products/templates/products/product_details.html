@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <form class="orders" action="{% url 'orders:order_details' %}" method="post">
+    <form class="order_submit" action="{% url 'orders:order_details' %}" method="post">
         {% csrf_token %}
         <input type="hidden" name="id" value="{{ product.id }}">
         <input type="submit" name="Buy" value="Buy Now">
