@@ -12,3 +12,9 @@ class Orders(models.Model):
 
     def __str__(self):
         return self.productname
+
+    def getcost(self):
+        return '₹' + str(self.cost)
+
+    def getaddress(self):
+        return "Delievering to " + self.customer_address
