@@ -107,3 +107,14 @@ margin-right:  200px;
 {
     margin: 80px;
 }
+
+.product
+{
+    margin: 80px 50px 50px 50px;
+    text-align: center;
+}
+
+.order_submit
+{
+    margin-left:  520px;
+}
