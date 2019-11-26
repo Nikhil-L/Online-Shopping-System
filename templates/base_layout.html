@@ -8,16 +8,16 @@
         <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
-        <nav>
+        <div class="base">
             {% if user.is_authenticated %}
-                <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                <form class="active" action="{% url 'accounts:logout' %}" method="post">
                     {% csrf_token %}
                     <button type="submit">Logout</button>
                 </form>
-                <form class="orders" action="{% url 'orders:order_details' %}" method="get">
+                <form class="active" action="{% url 'orders:order_details' %}" method="get">
                     <input type="submit" name="orders" value="orders">
                 </form>
-                <form class="home" action="{% url 'products:product_list' %}" method="get">
+                <form class="active" action="{% url 'products:product_list' %}" method="get">
                     <input type="submit" name="home" value="Home">
                 </form>
             {% else %}
@@ -28,7 +28,8 @@
                     <input type="submit" name="signup" value="signup">
                 </form>
             {% endif %}
-        </nav>
+        </div>
+
         <div class="wrapper">
             {% block content %}
             {% endblock %}
