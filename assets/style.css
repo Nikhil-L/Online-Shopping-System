@@ -36,18 +36,65 @@ button:hover {
     display: inline;
 }
 
+
+.wrapper
+{
+   margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
 .form-box
 {
     margin: 100px 30px;
-}
-
-.site-form
-{
-    margin: 300px, 3000px;
+    display: inline;
 }
 
 .create-customer
 {
-    margin: 50px , 50px;
-    display: inline list-item;
+    margin-top: 10px;
+   margin-bottom: 50px;
+   margin-left: 100px;
+   margin-right: 100px;
+    display: inline;
+}
+
+.site-form
+{
+    display: inline;
+}
+
+h1
+{
+    text-align: center;
+}
+
+#id_FirstName
+{ margin-right: 50px;
+  margin-left: 10px;
+}
+#id_Email
+{margin-right: 100px;
+ margin-left: 10px;
+}
+#id_Phone
+{ margin-right: 50px;
+     margin-left: 10px;
+}
+#id_Address{
+    margin: 70px 50px 40px 10px;
+}
+#id_LastName
+{
+    margin-right: 50px;
+     margin-left: 10px;
+}
+#id_City{
+margin-right:  200px;
+ margin-left: 10px;
+}
+#id_Pincode
+{
+    margin-right: 100px;
 }
