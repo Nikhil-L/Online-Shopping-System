@@ -1,5 +1,53 @@
+body {
+    font-weight: bold;
+    color : white;
+    background-image: url(cool-background.jpeg);
+    font-family: Arial, Helvetica, sans-serif;}
 
-body
+input[type=id_password], input[type = id_username] {
+    color: grey;
+    padding: 12px 20px;
+    margin: 20px 20px;
+    display: inline-block;
+    }
+
+
+button , input[type = submit]{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 25px;
+  margin: 20px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.base
 {
-    background: white;
+    display: inline-block;
+}
+
+.active
+{   padding-left:;
+    display: inline;
+}
+
+.form-box
+{
+    margin: 100px 30px;
+}
+
+.site-form
+{
+    margin: 300px, 3000px;
+}
+
+.create-customer
+{
+    margin: 50px , 50px;
+    display: inline list-item;
 }
