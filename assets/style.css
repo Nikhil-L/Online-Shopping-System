@@ -74,26 +74,33 @@ h1
 { margin-right: 50px;
   margin-left: 10px;
 }
+
 #id_Email
-{margin-right: 100px;
+{
+ margin-right: 100px;
  margin-left: 10px;
 }
+
 #id_Phone
 { margin-right: 50px;
      margin-left: 10px;
 }
+
 #id_Address{
     margin: 70px 50px 40px 10px;
 }
+
 #id_LastName
 {
     margin-right: 50px;
      margin-left: 10px;
 }
+
 #id_City{
 margin-right:  200px;
  margin-left: 10px;
 }
+
 #id_Pincode
 {
     margin-right: 100px;
