@@ -26,7 +26,7 @@ def order_details(request):
             product.save()
             return redirect('home')
         else:
-            return HttpResponse("Out of Stock")
+            return render(request, 'orders/out_of_stock.html')
 
     else:
         orders = Orders.objects.filter(username = request.user)
