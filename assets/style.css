@@ -2,17 +2,19 @@ body {
     font-weight: bold;
     color : white;
     background-image: url(cool-background.jpeg);
-    font-family: Arial, Helvetica, sans-serif;}
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-input[type=id_password], input[type = id_username] {
+input[type=id_password], input[type = id_username] 
+{
     color: grey;
     padding: 12px 20px;
     margin: 20px 20px;
     display: inline-block;
     }
 
-
-button , input[type = submit]{
+button , input[type = submit]
+{
   background-color: #4CAF50;
   color: white;
   padding: 14px 25px;
@@ -22,7 +24,8 @@ button , input[type = submit]{
   font-weight: bold;
 }
 
-button:hover {
+button:hover 
+{
   opacity: 0.8;
 }
 
